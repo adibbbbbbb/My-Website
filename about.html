@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HopeBangladesh</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="header">
+		<div>
+			<a href="index.html" id="logo"><img src="images/hope-logo.svg" alt="logo"></a>
+			<ul>
+				<li>
+					<a href="index.html">Home(Modified JS)</a>
+				</li>
+				<li class="current">
+					<a href="about.html">About(Modified JS)</a>
+				</li>
+				<li>
+					<a href="getinvolved.html">Get Involved</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="body">
+		<div id="about">
+			<h1>"Giving is not just about making a donation. It is about making a difference." Donate now!</h1>
+			<div class="aside">
+				<div>
+					<h2>Orphange Campaign 2024: Milon Mela(I added this here)</h2>
+					<p>
+						<img src="images/campaign1.jfif">
+					</p>
+					<p>
+                       On March 2nd, volunteers from Hope Bangladesh visited Families For Children, a Canadian non-profit aiding children with disabilities. The day featured joyful activities like singing, a cultural show, and an art competition where the children's talents were celebrated with prizes. Essential school supplies were gifted to support their education. Sharing a meal helped build strong connections, making the day memorable and highlighting the power of compassion and outreach.
+					</p>
+				</div>
+				<div>
+					<h2>Winter Campaign 2023: Share the Warmth(I added this here)</h2>
+					<p>
+						<img src="images/campaign2.jfif">
+					</p>
+					<p>
+                       Hope Bangladesh successfully completed Phase 2 of Share the Warmth, reaching over 500 underprivileged families in Kaultia, Gazipur. They distributed over 3,500 donated clothes to men, women, and children, providing much-needed warmth. This generosity has inspired them to consider extending Phase 2.
+					</p>
+				</div>
+			</div>
+			<div class="sidebar">
+				<h2>Be Part of Our Community(Please check what I did here)</h2>
+				<p>
+				   Join us in making a difference! By becoming a part of our community, you can help support those in need and create lasting change. Together, we can uplift lives and spread hope. <a href="getinvolved.html">Get involved today!</a>
+				</p>
+				<h2>Ramadan Campaign: Sadaqah Fi Ramadan</h2>
+				<p>
+					The Ramadan campaign is one of the biggest campaigns of Hope Bangladesh. <a href="getinvolved.html">Donate a part of your Zakat now!</a>
+					<img src="images/people3.jfif">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+    <div>
+        <form action="index.html" onsubmit="return false;">
+            <h2>Send A Message</h2>
+            <label for="name">
+                <span>Your Name:</span>
+                <input type="text" id="name" required>
+            </label>
+            <label for="message">
+                <span class="message">Message:</span>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            </label>
+            <input type="button" class="send" value="Send" onclick="sendEmail()">
+        </form>
+        <div>
+            <h2>Contact Details</h2>
+            <ul>
+                <li>
+                    <b>Location</b>
+                    <span>:</span>
+                    <p>5/11 Block F, Lalmatia, Dhaka 1207</p>
+                </li>
+                <li>
+                    <b>Phone</b>
+                    <span>:</span>
+                    <p>+880 1756 9659 18, +880 1511 2210 97</p>
+                </li>
+                <li>
+                    <b>Email</b>
+                    <span>:</span>
+                    <p>
+                        <a href="mailto:hopebangladesh.org@gmail.com" class="email" target="_blank">hopebangladesh.org@gmail.com</a>
+                    </p>
+                </li>
+                <li>
+                    <b>Social</b>
+                    <span>:</span>
+                    <div>
+                        <a href="https://www.facebook.com/hopebd.org" id="facebook" target="_blank">facebook</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+function sendEmail() {
+    var name = encodeURIComponent(document.getElementById('name').value);
+    var message = encodeURIComponent(document.getElementById('message').value);
+
+    // Construct the mailto link
+    var mailtoLink = 'mailto:hopebangladesh.org@gmail.com?subject=New Message from ' + name +
+                     '&body=Name: ' + name + '%0A' + 'Message: ' + message;
+
+    // Open the user's email client
+    window.location.href = mailtoLink;
+}
+</script>
+		<p>
+			<marquee>&copy; Rahman Abdur. 24224547</marquee>
+		</p>
+	</div>
+</body>
+</html>

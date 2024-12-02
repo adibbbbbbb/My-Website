@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HopeBangladesh</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!--Popup Code-->
+	<div class="welcome-popup" id="welcomePopup">
+	<div class="popup-content">
+		  <h2>Welcome to Our Website Professor Ozaydin!</h2>
+		  <p>We're thrilled to have you here. (Modified JS)</p>
+ 	<button id="closePopup">Got it!</button>
+	</div>
+</div>
+<!--Script-->
+	<script src="js/script.js"></script>
+	<div id="header">
+		<div>
+			<a href="index.html" id="logo"><img src="images/hope-logo.svg" alt="logo"></a>
+			<ul>
+				<li class="current">
+					<a href="index.html">Home(Modified JS)</a>
+				</li>
+				<li>
+					<a href="about.html">About(Modified JS)</a>
+				</li>
+				<li class="about">
+					<a href="getinvolved.html">Get Involved</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="body">
+		<div class="header">
+			<div>
+				<img src="images/pepople.svg" alt="Image">
+				<div id="tagline">
+					<h1>Means for Goodness</h1>
+					<center>
+					<h2>Hope Bangladesh is a student led NPO. (Modified CSS)</h2>
+					</center>
+				</div>
+				<div class="section">
+					<h2>The organization was founded in 2021 by school students</h2>
+					<p>
+					    I added the picture. I added the text colors and fonts. I added youtube, facebook and donation links in the third page. I added a mail sen
+
+					</p>
+					<a href="about.html" class="first">Learn More About Us</a>
+					<a href="getinvolved.html">Donate</a>
+				</div>
+			</div>
+		</div>
+		<div class="body">
+			<div>
+				<div class="figure">
+					<a href="campaigns.html"><img src="images/house.jpeg" alt="Image"></a>
+					<h2><a href="getinvolved.html">I added this here</a></h2>
+				</div>
+				<div class="news">
+					<h2>News &amp; Blog(Modified CSS)</h2>
+					<ul>
+						<li>
+							<span class="date">December, 2024</span>
+							<h3><a>Building a house for a family affected by flood in Feni</a></h3>
+							<p>
+								The house is under construction and is expected to be completed within January, 2025. The family is now living in a shelter house nearby and will be moving in to their new home in February. This is only being possible for your kind donations. Thank you!
+							</p>
+						</li>						
+					</ul>
+				</div>
+				<div class="help">
+					<h2>How To Help</h2>
+					<a href="getinvolved.html"><img src="images/finger.jpg" alt="Image"></a>
+					<h3><a href="getinvolved.html">Volunteer or Donate</a></h3>
+					<p>
+						You can join our organization to assist us in helping the poor people. You can also donate to us. For donations or funds, contact us via email or phone.
+					</p>
+					<span class="link"><a href="getinvolved.html">Get Involved</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+<div id="footer">
+    <div>
+        <form action="index.html" onsubmit="return false;">
+            <h2>Send A Message(I did some JS and CSS here)</h2>
+            <label for="name">
+                <span>Your Name:</span>
+                <input type="text" id="name" required>
+            </label>
+            <label for="message">
+                <span class="message">Message:</span>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            </label>
+            <input type="button" class="send" value="Send" onclick="sendEmail()">
+        </form>
+        <div>
+            <h2>Contact Details(I did changes here)</h2>
+            <ul>
+                <li>
+                    <b>Location</b>
+                    <span>:</span>
+                    <p>5/11 Block F, Lalmatia, Dhaka 1207</p>
+                </li>
+                <li>
+                    <b>Phone</b>
+                    <span>:</span>
+                    <p>+880 1756 9659 18, +880 1511 2210 97</p>
+                </li>
+                <li>
+                    <b>Email</b>
+                    <span>:</span>
+                    <p>
+                        <a href="mailto:hopebangladesh.org@gmail.com" class="email" target="_blank">hopebangladesh.org@gmail.com</a>
+                    </p>
+                </li>
+                <li>
+                    <b>Social</b>
+                    <span>:</span>
+                    <div>
+                        <a href="https://www.facebook.com/hopebd.org" id="facebook" target="_blank">facebook</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+function sendEmail() {
+    var name = encodeURIComponent(document.getElementById('name').value);
+    var message = encodeURIComponent(document.getElementById('message').value);
+
+    // Construct the mailto link
+    var mailtoLink = 'mailto:hopebangladesh.org@gmail.com?subject=New Message from ' + name +
+                     '&body=Name: ' + name + '%0A' + 'Message: ' + message;
+
+    // Open the user's email client
+    window.location.href = mailtoLink;
+}
+</script>
+		<p>
+			<marquee>&copy; Rahman Abdur. 24224547</marquee>
+		</p>
+	</div>
+</body>
+</html>
